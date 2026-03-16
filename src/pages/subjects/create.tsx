@@ -3,6 +3,7 @@ const SubjectCreate = () => {
     return (
         <div>
 
+                <p> create subject</p>
         </div>
     )
 }
