@@ -1,0 +1,5 @@
+reviews:
+  auto_review:
+    enabled: true
+  auto_approve_reviews:
+    enabled: true
