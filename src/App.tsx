@@ -16,7 +16,7 @@ import {Dashboard} from "@/pages/dashboard.tsx";
 import {BookOpen, Home} from "lucide-react";
 import {Layout} from "@/components/refine-ui/layout/layout.tsx";
 import SubjectList from "./pages/subjects/list";
-import SubjectCreate from "./pages/subjects/Create";
+import SubjectCreate from "./pages/subjects/create";
 
 function App() {
   return (
@@ -54,8 +54,10 @@ function App() {
                       </Layout>
                   }>
                     <Route path="/" element={<Dashboard />} />
-                    <Route index element ={<SubjectList />} />
-                    <Route path = "create" element={<SubjectCreate />} />
+                    <Route path="/subjects">
+                      <Route index element ={<SubjectList />} />
+                      <Route path = "create" element={<SubjectCreate />} />
+                    </Route>
                   </Route>
                 
               </Routes>
